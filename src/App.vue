@@ -8,3 +8,7 @@ import { useTagStore } from './stores/tag-store';
 const tagStore = useTagStore();
 tagStore.fetchTags();
 </script>
+
+<style>
+@import './style.css';
+</style>
