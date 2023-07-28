@@ -1,0 +1,5 @@
+services:
+  frontend:
+    image: endevel-blog
+    ports:
+      - 8080:8080
