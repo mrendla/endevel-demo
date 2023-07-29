@@ -1,0 +1,22 @@
+name: Lint and tests CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run lint and tests
+      run: |
+              npm ci
+              npm run build
+              npm run lint
+              npm run test
