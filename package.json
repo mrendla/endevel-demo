@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "serve": "vite --port 5000",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "npx eslint . --ext .js,.ts,.tsx,.vue"
+    "lint": "npx eslint . --ext .js,.ts,.tsx,.vue",
+    "test": "start-server-and-test serve localhost:5000 'npx cypress run'"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -23,8 +25,10 @@
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "cypress": "^12.17.2",
     "eslint-plugin-vue": "^9.15.1",
     "sass": "^1.32.12",
+    "start-server-and-test": "^2.0.0",
     "typescript": "^5.1.6",
     "vite": "^4.4.5",
     "vue-tsc": "^1.8.5"
