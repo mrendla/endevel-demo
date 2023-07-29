@@ -8,7 +8,7 @@
     "serve": "vite --port 5000",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "npx eslint . --ext .js,.ts,.tsx,.vue",
+    "lint": "eslint . --ext .js,.ts,.tsx,.vue",
     "test": "start-server-and-test serve localhost:5000 'npx cypress run'"
   },
   "dependencies": {
